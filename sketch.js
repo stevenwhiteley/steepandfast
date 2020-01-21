@@ -22,13 +22,13 @@ function draw(){
 //translate(width/2, height/2.3, 0); 
 rotateY(rotationAmount*0.5);
 rotateX(rotationAmount*0.5);
-box(450);
+box(250);
 fill(random(55), 55, random(55), 55);
 pop();  
     
   
   push();
-ellipse(width/2, height/2, circleY*60, circleX*50);
+ellipse(20, 20, circleY*60, circleX*50);
 //translate (400, 300); 
 pop();  
   
