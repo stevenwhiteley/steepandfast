@@ -19,10 +19,10 @@ function draw(){
   frames = frames % 360;
  
   push();
-//translate(width/2, height/2.3, 0); 
+//translate(mouseX, mouseY); 
 rotateY(rotationAmount*0.5);
 rotateX(rotationAmount*0.5);
-box(250);
+box(250, mouseX, mouseY);
 fill(random(55), 55, random(55), 55);
 pop();  
     
@@ -33,7 +33,7 @@ ellipse(20, 20, circleY*60, circleX*50);
 pop();  
   
   push();
-ellipse(width/2, height/2, circleZ*20, circleX*20);
+ellipse(mouseX, mouseY, circleZ*20, circleX*20);
 fill(255, random(255), random(255), 255);
 //translate (400, 300); 
 pop();
@@ -81,6 +81,8 @@ beginShape();
 lights();
 endShape(CLOSE);
 pop();
+
+
 
    circleX = random(-40,40);
     circleY = random(-20,20);
