@@ -4,7 +4,7 @@ var circleZ;
 var frames = 100;
 
 function setup() {
-  createCanvas(900, 900, WEBGL);
+  createCanvas(windowWidth, windowHeight, WEBGL);
      background(0);
 
   circleX = width/10;
@@ -53,6 +53,8 @@ pop();
 //translate (width/2, height/2, width/2);
 push();
 beginShape();
+  stroke(random(255), random(255), random(255), random(255));
+    fill(random(255), random(255), random(255), random(255), random(255));
   rotateX(rotationAmount*2);
   rotateY(rotationAmount*2);
   vertex(0, 0, 50);
