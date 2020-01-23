@@ -27,7 +27,7 @@ box(250, mouseX, mouseY);
 pop();
 
 push();
-  fill(random(255), random(255), random(255), random(255), 255);
+  fill(random(255), random(255), random(255), random(255), random(255));
 
 ellipse(20, 20, circleY*60, circleX*50);
 //translate (400, 300); 
