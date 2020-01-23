@@ -22,7 +22,7 @@ push();
 //translate(mouseX, mouseY); 
 rotateY(rotationAmount*0.5);
 rotateX(rotationAmount*0.5);
-fill(random(255), random(55), random(255), 255);
+fill(random(255), random(255), random(255), 255);
 box(250, mouseX, mouseY);
 pop();
 
@@ -32,7 +32,7 @@ push();
 ellipse(20, 20, circleY*60, circleX*50);
 //translate (400, 300); 
 
-  fill(255, random(255), random(255), random(255), 255);
+  fill(255, random(255), random(255), random(255), random(255));
 ellipse(mouseX, mouseY, circleZ*20, circleX*20);
 pop();
 //translate (400, 300); 
