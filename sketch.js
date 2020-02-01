@@ -5,11 +5,16 @@
 
 let face;
 
+function preload() {
+  // Load model with normalise parameter set to true
+    face = loadModel('assets/me.OBJ', true);
+}
+
 function setup() {
   // put setup code here
   createCanvas(1000, 1000, WEBGL);
   //image(bg, 1000, 1000);
-  face = loadModel('assets/me.obj, true');
+
 }
 
 function draw() {
